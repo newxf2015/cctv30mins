@@ -1,9 +1,17 @@
 CCTV30min
+
 通过网络爬虫爬取中央新闻30分视频 将cctv30mins.py文件拷贝到运行目录 传入参数说明
+
 -s 从YYYYMM 开始下载起始月份的视频
+
 -e 截止到YYYYMM 结束月份的视频
 
 数据源 http://tv.cctv.com/lm/xw30f/
+
+爬取其央视的其他节目 可修改 数据源 及视频真实下载地址(只需修改代码1200)，其他节目的节目代码可通过Fiddler查看
+
+'http://cntv.hls.cdn.apdcdn.com/asp/hls/1200/0303000a/3/default/'+videoCenterId+r'/' + str(i) + r'.ts'
+
 
 监控网络请求的工具Fiddler，Chrome 浏览器
 

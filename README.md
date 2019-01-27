@@ -1,10 +1,14 @@
-CCTV30min
+CCTV30mins
 
 通过网络爬虫爬取中央新闻30分视频 将cctv30mins.py文件拷贝到运行目录 传入参数说明
+
 
 -s 从YYYYMM 开始下载起始月份的视频
 
 -e 截止到YYYYMM 结束月份的视频
+
+
+python3.7 -s 201901 -e 201901 (可用python3 以上的版本)
 
 数据源 http://tv.cctv.com/lm/xw30f/
 

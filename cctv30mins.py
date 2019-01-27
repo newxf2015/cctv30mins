@@ -55,12 +55,12 @@ def downloadVideo(videoCenterId,videotitle):
 
 def merge_file(dir,title):
     os.chdir(dir)
-    newfile=title[-8:0]+r".mp4"
+    newfile=title[-8:]+r".mp4"
     newfile=os.path.join(path,newfile)
     #print("-----------%s" %newfile)
     cmd = "copy /b * %s" %newfile
     os.system(cmd)
-    #filename=title[-8:0]
+    #filename=title[-8:]
     #newfile=os.path.join(path,filename)
     #print("newfile=%s" %filename)
     #shutil.copyfile("tmp.mp4",newfile)
